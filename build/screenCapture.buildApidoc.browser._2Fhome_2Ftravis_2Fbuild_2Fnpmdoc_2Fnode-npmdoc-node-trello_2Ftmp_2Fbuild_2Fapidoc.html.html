@@ -1,0 +1,223 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/adunkman/node-trello">node-trello (v1.1.2)</a>
+</h1>
+<h4>Node wrapper for Trello's HTTP API.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-trello">module node-trello</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.OAuth">
+            function <span class="apidocSignatureSpan">node-trello.</span>OAuth
+            <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-trello.</span>OAuth.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-trello.OAuth">module node-trello.OAuth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.OAuth.OAuth">
+            function <span class="apidocSignatureSpan">node-trello.</span>OAuth
+            <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-trello.OAuth.prototype">module node-trello.OAuth.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.OAuth.prototype.getAccessToken">
+            function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getAccessToken
+            <span class="apidocSignatureSpan">(bag, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.OAuth.prototype.getRequestToken">
+            function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getRequestToken
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-trello" id="apidoc.module.node-trello">module node-trello</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.OAuth" id="apidoc.element.node-trello.OAuth">
+        function <span class="apidocSignatureSpan">node-trello.</span>OAuth
+        <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
+  this.appName = appName;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-trello.OAuth" id="apidoc.module.node-trello.OAuth">module node-trello.OAuth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.OAuth.OAuth" id="apidoc.element.node-trello.OAuth.OAuth">
+        function <span class="apidocSignatureSpan">node-trello.</span>OAuth
+        <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
+  this.appName = appName;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-trello.OAuth.prototype" id="apidoc.module.node-trello.OAuth.prototype">module node-trello.OAuth.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.OAuth.prototype.getAccessToken" id="apidoc.element.node-trello.OAuth.prototype.getAccessToken">
+        function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getAccessToken
+        <span class="apidocSignatureSpan">(bag, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getAccessToken = function (bag, callback) {
+  var token = bag.oauth_token;
+  var tokenSecret = bag.oauth_token_secret;
+  var verifier = bag.oauth_verifier;
+
+  this.oauth.getOAuthAccessToken(token, tokenSecret, verifier, function (error, accessToken, accessTokenSecret, results) {
+    if (error) {
+      return callback(error, null);
+    }
+
+    callback(null, {
+      oauth_token: token,
+      oauth_token_secret: tokenSecret,
+      oauth_access_token: accessToken,
+      oauth_access_token_secret: accessTokenSecret
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.OAuth.prototype.getRequestToken" id="apidoc.element.node-trello.OAuth.prototype.getRequestToken">
+        function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getRequestToken
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRequestToken = function (callback) {
+  var appName = this.appName;
+
+  this.oauth.getOAuthRequestToken(function (error, token, tokenSecret, results) {
+    if (error) {
+      return callback(error, null);
+    }
+
+    callback(null, {
+      oauth_token: token,
+      oauth_token_secret: tokenSecret,
+      redirect: authorizeUrl + ("?oauth_token=" + token + "&amp;name=" + appName)
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
