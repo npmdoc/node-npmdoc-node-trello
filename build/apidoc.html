@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node-trello">
+            function <span class="apidocSignatureSpan"></span>node-trello
+            <span class="apidocSignatureSpan">(key, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.node-trello.OAuth">
             function <span class="apidocSignatureSpan">node-trello.</span>OAuth
             <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
@@ -72,7 +81,22 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello">
+            function <span class="apidocSignatureSpan">node-trello.</span>node_trello
+            <span class="apidocSignatureSpan">(key, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-trello.</span>OAuth.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-trello.</span>node_trello.prototype</span>
 
         </li>
 
@@ -113,10 +137,120 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-trello.node_trello">module node-trello.node_trello</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.node_trello">
+            function <span class="apidocSignatureSpan">node-trello.</span>node_trello
+            <span class="apidocSignatureSpan">(key, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.OAuth">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.</span>OAuth
+            <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-trello.node_trello.prototype">module node-trello.node_trello.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.addAuthArgs">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>addAuthArgs
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.del">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>del
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.get">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>get
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.parseQuery">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>parseQuery
+            <span class="apidocSignatureSpan">(uri, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.post">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>post
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.put">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>put
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-trello.node_trello.prototype.request">
+            function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>request
+            <span class="apidocSignatureSpan">(method, uri, argsOrCallback, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.node-trello" id="apidoc.module.node-trello">module node-trello</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node-trello" id="apidoc.element.node-trello.node-trello">
+        function <span class="apidocSignatureSpan"></span>node-trello
+        <span class="apidocSignatureSpan">(key, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">node-trello = function (key, token) {
+  if (!key) {
+    throw new Error(&#x22;Application API key is required&#x22;);
+  }
+
+  this.key = key;
+  this.token = token;
+  this.host = &#x22;https://api.trello.com&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -132,6 +266,29 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello" id="apidoc.element.node-trello.node_trello">
+        function <span class="apidocSignatureSpan">node-trello.</span>node_trello
+        <span class="apidocSignatureSpan">(key, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">node_trello = function (key, token) {
+  if (!key) {
+    throw new Error(&#x22;Application API key is required&#x22;);
+  }
+
+  this.key = key;
+  this.token = token;
+  this.host = &#x22;https://api.trello.com&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
 
 
 
@@ -213,6 +370,240 @@
       oauth_token_secret: tokenSecret,
       redirect: authorizeUrl + (&#x22;?oauth_token=&#x22; + token + &#x22;&#x26;name=&#x22; + appName)
     });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-trello.node_trello" id="apidoc.module.node-trello.node_trello">module node-trello.node_trello</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.node_trello" id="apidoc.element.node-trello.node_trello.node_trello">
+        function <span class="apidocSignatureSpan">node-trello.</span>node_trello
+        <span class="apidocSignatureSpan">(key, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">node_trello = function (key, token) {
+  if (!key) {
+    throw new Error(&#x22;Application API key is required&#x22;);
+  }
+
+  this.key = key;
+  this.token = token;
+  this.host = &#x22;https://api.trello.com&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.OAuth" id="apidoc.element.node-trello.node_trello.OAuth">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.</span>OAuth
+        <span class="apidocSignatureSpan">(key, secret, loginCallback, appName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, &#x22;1.0&#x22;, loginCallback, &#x22;HMAC-SHA1&#x22;);
+  this.appName = appName;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-trello.node_trello.prototype" id="apidoc.module.node-trello.node_trello.prototype">module node-trello.node_trello.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.addAuthArgs" id="apidoc.element.node-trello.node_trello.prototype.addAuthArgs">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>addAuthArgs
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addAuthArgs = function (args) {
+  args.key = this.key;
+
+  if (this.token) {
+    args.token = this.token;
+  }
+
+  return args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.del" id="apidoc.element.node-trello.node_trello.prototype.del">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>del
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">del = function () {
+  Array.prototype.unshift.call(arguments, &#x22;DELETE&#x22;);
+  return this.request.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.get" id="apidoc.element.node-trello.node_trello.prototype.get">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>get
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function () {
+  Array.prototype.unshift.call(arguments, &#x22;GET&#x22;);
+  return this.request.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+[devkey]: https://trello.com/1/appKey/generate
+
+## Example Code
+```javascript
+var Trello = require(&#x22;node-trello&#x22;);
+var t = new Trello(&#x22;&#x3c;your key&#x3e;&#x22;, &#x22;&#x3c;token&#x3e;&#x22;);
+
+t.<span class="apidocCodeKeywordSpan">get</span>(&#x22;/1/members/me&#x22;, function(err, data) {
+if (err) throw err;
+console.log(data);
+});
+
+// URL arguments are passed in as an object.
+t.get(&#x22;/1/members/me&#x22;, { cards: &#x22;open&#x22; }, function(err, data) {
+if (err) throw err;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.parseQuery" id="apidoc.element.node-trello.node_trello.prototype.parseQuery">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>parseQuery
+        <span class="apidocSignatureSpan">(uri, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseQuery = function (uri, args) {
+  if (uri.indexOf(&#x22;?&#x22;) !== -1) {
+    var ref = querystring.parse(uri.split(&#x22;?&#x22;)[1]);
+
+    for (var key in ref) {
+      var value = ref[key];
+      args[key] = value;
+    }
+  }
+
+  return args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.post" id="apidoc.element.node-trello.node_trello.prototype.post">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>post
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post = function () {
+  Array.prototype.unshift.call(arguments, &#x22;POST&#x22;);
+  return this.request.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.put" id="apidoc.element.node-trello.node_trello.prototype.put">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>put
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function () {
+  Array.prototype.unshift.call(arguments, &#x22;PUT&#x22;);
+  return this.request.apply(this, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-trello.node_trello.prototype.request" id="apidoc.element.node-trello.node_trello.prototype.request">
+        function <span class="apidocSignatureSpan">node-trello.node_trello.prototype.</span>request
+        <span class="apidocSignatureSpan">(method, uri, argsOrCallback, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">request = function (method, uri, argsOrCallback, callback) {
+  var args;
+
+  if (arguments.length === 3) {
+    callback = argsOrCallback;
+    args = {};
+  }
+  else {
+    args = argsOrCallback || {};
+  }
+
+  var url = this.host + (uri[0] === &#x22;/&#x22; ? &#x22;&#x22; : &#x22;/&#x22;) + uri;
+
+  if (method === &#x22;GET&#x22;) {
+    url += &#x22;?&#x22; + querystring.stringify(this.addAuthArgs(this.parseQuery(uri, args)));
+  }
+
+  var options = {
+    url: url,
+    method: method
+  };
+
+  if (args.attachment) {
+    options.formData = {
+      key: this.key,
+      token: this.token
+    };
+
+    if (typeof args.attachment === &#x22;string&#x22; || args.attachment instanceof String) {
+      options.formData.url = args.attachment;
+    }
+    else {
+      options.formData.file = args.attachment;
+    }
+  }
+  else {
+    options.json = this.addAuthArgs(this.parseQuery(uri, args));
+  }
+
+  request[method === &#x27;DELETE&#x27; ? &#x27;del&#x27; : method.toLowerCase()](options, function (err, response, body) {
+    if (!err &#x26;&#x26; response.statusCode &#x3e;= 400) {
+      err = new Error(body);
+      err.statusCode = response.statusCode;
+      err.responseBody = body;
+      err.statusMessage = require(&#x27;http&#x27;).STATUS_CODES[response.statusCode];
+    }
+
+    callback(err, body);
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>

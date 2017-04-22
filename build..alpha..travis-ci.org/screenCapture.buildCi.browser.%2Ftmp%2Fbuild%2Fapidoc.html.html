@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/adunkman/node-trello"
-
-    >node-trello (v1.1.2)</a>
+    <a href="https://github.com/adunkman/node-trello">node-trello (v1.1.2)</a>
 </h1>
 <h4>Node wrapper for Trello's HTTP API.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.node-trello">module node-trello</a><ol>
 
@@ -241,12 +234,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">node-trello = function (key, token) {
   if (!key) {
-    throw new Error(&#x22;Application API key is required&#x22;);
+    throw new Error("Application API key is required");
   }
 
   this.key = key;
   this.token = token;
-  this.host = &#x22;https://api.trello.com&#x22;;
+  this.host = "https://api.trello.com";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -261,7 +254,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
-  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, &#x22;1.0&#x22;, loginCallback, &#x22;HMAC-SHA1&#x22;);
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
   this.appName = appName;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -278,12 +271,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">node_trello = function (key, token) {
   if (!key) {
-    throw new Error(&#x22;Application API key is required&#x22;);
+    throw new Error("Application API key is required");
   }
 
   this.key = key;
   this.token = token;
-  this.host = &#x22;https://api.trello.com&#x22;;
+  this.host = "https://api.trello.com";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -307,7 +300,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
-  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, &#x22;1.0&#x22;, loginCallback, &#x22;HMAC-SHA1&#x22;);
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
   this.appName = appName;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -368,7 +361,7 @@
     callback(null, {
       oauth_token: token,
       oauth_token_secret: tokenSecret,
-      redirect: authorizeUrl + (&#x22;?oauth_token=&#x22; + token + &#x22;&#x26;name=&#x22; + appName)
+      redirect: authorizeUrl + ("?oauth_token=" + token + "&amp;name=" + appName)
     });
   });
 }</pre></li>
@@ -391,12 +384,12 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">node_trello = function (key, token) {
   if (!key) {
-    throw new Error(&#x22;Application API key is required&#x22;);
+    throw new Error("Application API key is required");
   }
 
   this.key = key;
   this.token = token;
-  this.host = &#x22;https://api.trello.com&#x22;;
+  this.host = "https://api.trello.com";
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -411,7 +404,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">OAuth = function (key, secret, loginCallback, appName) {
-  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, &#x22;1.0&#x22;, loginCallback, &#x22;HMAC-SHA1&#x22;);
+  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
   this.appName = appName;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -453,7 +446,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">del = function () {
-  Array.prototype.unshift.call(arguments, &#x22;DELETE&#x22;);
+  Array.prototype.unshift.call(arguments, "DELETE");
   return this.request.apply(this, arguments);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -469,7 +462,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">get = function () {
-  Array.prototype.unshift.call(arguments, &#x22;GET&#x22;);
+  Array.prototype.unshift.call(arguments, "GET");
   return this.request.apply(this, arguments);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -477,16 +470,16 @@
 
 ## Example Code
 ```javascript
-var Trello = require(&#x22;node-trello&#x22;);
-var t = new Trello(&#x22;&#x3c;your key&#x3e;&#x22;, &#x22;&#x3c;token&#x3e;&#x22;);
+var Trello = require("node-trello");
+var t = new Trello("&lt;your key&gt;", "&lt;token&gt;");
 
-t.<span class="apidocCodeKeywordSpan">get</span>(&#x22;/1/members/me&#x22;, function(err, data) {
+t.<span class="apidocCodeKeywordSpan">get</span>("/1/members/me", function(err, data) {
 if (err) throw err;
 console.log(data);
 });
 
 // URL arguments are passed in as an object.
-t.get(&#x22;/1/members/me&#x22;, { cards: &#x22;open&#x22; }, function(err, data) {
+t.get("/1/members/me", { cards: "open" }, function(err, data) {
 if (err) throw err;
 ...</pre></li>
     </ul>
@@ -501,8 +494,8 @@ if (err) throw err;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">parseQuery = function (uri, args) {
-  if (uri.indexOf(&#x22;?&#x22;) !== -1) {
-    var ref = querystring.parse(uri.split(&#x22;?&#x22;)[1]);
+  if (uri.indexOf("?") !== -1) {
+    var ref = querystring.parse(uri.split("?")[1]);
 
     for (var key in ref) {
       var value = ref[key];
@@ -525,7 +518,7 @@ if (err) throw err;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">post = function () {
-  Array.prototype.unshift.call(arguments, &#x22;POST&#x22;);
+  Array.prototype.unshift.call(arguments, "POST");
   return this.request.apply(this, arguments);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -541,7 +534,7 @@ if (err) throw err;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">put = function () {
-  Array.prototype.unshift.call(arguments, &#x22;PUT&#x22;);
+  Array.prototype.unshift.call(arguments, "PUT");
   return this.request.apply(this, arguments);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -567,10 +560,10 @@ if (err) throw err;
     args = argsOrCallback || {};
   }
 
-  var url = this.host + (uri[0] === &#x22;/&#x22; ? &#x22;&#x22; : &#x22;/&#x22;) + uri;
+  var url = this.host + (uri[0] === "/" ? "" : "/") + uri;
 
-  if (method === &#x22;GET&#x22;) {
-    url += &#x22;?&#x22; + querystring.stringify(this.addAuthArgs(this.parseQuery(uri, args)));
+  if (method === "GET") {
+    url += "?" + querystring.stringify(this.addAuthArgs(this.parseQuery(uri, args)));
   }
 
   var options = {
@@ -584,7 +577,7 @@ if (err) throw err;
       token: this.token
     };
 
-    if (typeof args.attachment === &#x22;string&#x22; || args.attachment instanceof String) {
+    if (typeof args.attachment === "string" || args.attachment instanceof String) {
       options.formData.url = args.attachment;
     }
     else {
@@ -595,12 +588,12 @@ if (err) throw err;
     options.json = this.addAuthArgs(this.parseQuery(uri, args));
   }
 
-  request[method === &#x27;DELETE&#x27; ? &#x27;del&#x27; : method.toLowerCase()](options, function (err, response, body) {
-    if (!err &#x26;&#x26; response.statusCode &#x3e;= 400) {
+  request[method === 'DELETE' ? 'del' : method.toLowerCase()](options, function (err, response, body) {
+    if (!err &amp;&amp; response.statusCode &gt;= 400) {
       err = new Error(body);
       err.statusCode = response.statusCode;
       err.responseBody = body;
-      err.statusMessage = require(&#x27;http&#x27;).STATUS_CODES[response.statusCode];
+      err.statusMessage = require('http').STATUS_CODES[response.statusCode];
     }
 
     callback(err, body);
@@ -618,3 +611,4 @@ if (err) throw err;
     ]
 </div>
 </div>
+</body></html>
