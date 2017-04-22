@@ -1,9 +1,14 @@
-# api documentation for  [node-trello (v1.1.2)](https://github.com/adunkman/node-trello)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-trello.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-trello) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-trello.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-trello)
+# npmdoc-node-trello
+
+#### api documentation for  [node-trello (v1.1.2)](https://github.com/adunkman/node-trello)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-trello.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-trello) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-trello.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-trello)
+
 #### Node wrapper for Trello's HTTP API.
 
-[![NPM](https://nodei.co/npm/node-trello.png?downloads=true)](https://www.npmjs.com/package/node-trello)
+[![NPM](https://nodei.co/npm/node-trello.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-trello)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-node-trello/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-node-trello_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-trello/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-node-trello/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-node-trello/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-node-trello/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-trello/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-node-trello/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Luca Matteis",
-        "email": "lmatteis@gmail.com"
+        "name": "Luca Matteis"
     },
     "bugs": {
         "url": "http://github.com/adunkman/node-trello/issues"
@@ -33,8 +37,7 @@
     },
     "contributors": [
         {
-            "name": "Andrew Dunkman",
-            "email": "andrew@dunkman.org"
+            "name": "Andrew Dunkman"
         }
     ],
     "dependencies": {
@@ -67,17 +70,14 @@
     "main": "./index",
     "maintainers": [
         {
-            "name": "lmatteis",
-            "email": "lmatteis@gmail.com"
+            "name": "lmatteis"
         },
         {
-            "name": "adunkman",
-            "email": "andrew@dunkman.org"
+            "name": "adunkman"
         }
     ],
     "name": "node-trello",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+ssh://git@github.com/adunkman/node-trello.git"
@@ -86,112 +86,9 @@
         "test": "mocha --reporter spec && ./node_modules/.bin/mocha --require blanket --reporter travis-cov",
         "test-cov-report": "mocha --require blanket --reporter html-cov > coverage.html && open coverage.html"
     },
-    "version": "1.1.2"
+    "version": "1.1.2",
+    "bin": {}
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module node-trello](#apidoc.module.node-trello)
-1.  [function <span class="apidocSignatureSpan">node-trello.</span>OAuth (key, secret, loginCallback, appName)](#apidoc.element.node-trello.OAuth)
-1.  object <span class="apidocSignatureSpan">node-trello.</span>OAuth.prototype
-
-#### [module node-trello.OAuth](#apidoc.module.node-trello.OAuth)
-1.  [function <span class="apidocSignatureSpan">node-trello.</span>OAuth (key, secret, loginCallback, appName)](#apidoc.element.node-trello.OAuth.OAuth)
-
-#### [module node-trello.OAuth.prototype](#apidoc.module.node-trello.OAuth.prototype)
-1.  [function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getAccessToken (bag, callback)](#apidoc.element.node-trello.OAuth.prototype.getAccessToken)
-1.  [function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getRequestToken (callback)](#apidoc.element.node-trello.OAuth.prototype.getRequestToken)
-
-
-
-# <a name="apidoc.module.node-trello"></a>[module node-trello](#apidoc.module.node-trello)
-
-#### <a name="apidoc.element.node-trello.OAuth"></a>[function <span class="apidocSignatureSpan">node-trello.</span>OAuth (key, secret, loginCallback, appName)](#apidoc.element.node-trello.OAuth)
-- description and source-code
-```javascript
-OAuth = function (key, secret, loginCallback, appName) {
-  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
-  this.appName = appName;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.node-trello.OAuth"></a>[module node-trello.OAuth](#apidoc.module.node-trello.OAuth)
-
-#### <a name="apidoc.element.node-trello.OAuth.OAuth"></a>[function <span class="apidocSignatureSpan">node-trello.</span>OAuth (key, secret, loginCallback, appName)](#apidoc.element.node-trello.OAuth.OAuth)
-- description and source-code
-```javascript
-OAuth = function (key, secret, loginCallback, appName) {
-  this.oauth = new OAuth(requestUrl, accessUrl, key, secret, "1.0", loginCallback, "HMAC-SHA1");
-  this.appName = appName;
-}
-```
-- example usage
-```shell
-n/a
-```
-
-
-
-# <a name="apidoc.module.node-trello.OAuth.prototype"></a>[module node-trello.OAuth.prototype](#apidoc.module.node-trello.OAuth.prototype)
-
-#### <a name="apidoc.element.node-trello.OAuth.prototype.getAccessToken"></a>[function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getAccessToken (bag, callback)](#apidoc.element.node-trello.OAuth.prototype.getAccessToken)
-- description and source-code
-```javascript
-getAccessToken = function (bag, callback) {
-  var token = bag.oauth_token;
-  var tokenSecret = bag.oauth_token_secret;
-  var verifier = bag.oauth_verifier;
-
-  this.oauth.getOAuthAccessToken(token, tokenSecret, verifier, function (error, accessToken, accessTokenSecret, results) {
-    if (error) {
-      return callback(error, null);
-    }
-
-    callback(null, {
-      oauth_token: token,
-      oauth_token_secret: tokenSecret,
-      oauth_access_token: accessToken,
-      oauth_access_token_secret: accessTokenSecret
-    });
-  });
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.node-trello.OAuth.prototype.getRequestToken"></a>[function <span class="apidocSignatureSpan">node-trello.OAuth.prototype.</span>getRequestToken (callback)](#apidoc.element.node-trello.OAuth.prototype.getRequestToken)
-- description and source-code
-```javascript
-getRequestToken = function (callback) {
-  var appName = this.appName;
-
-  this.oauth.getOAuthRequestToken(function (error, token, tokenSecret, results) {
-    if (error) {
-      return callback(error, null);
-    }
-
-    callback(null, {
-      oauth_token: token,
-      oauth_token_secret: tokenSecret,
-      redirect: authorizeUrl + ("?oauth_token=" + token + "&name=" + appName)
-    });
-  });
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
